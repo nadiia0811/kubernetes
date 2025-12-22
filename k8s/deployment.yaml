@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: kubernetes-demo-api
-          image: jsmasterypro/kubernetes-demo-api:latest
+          image: kubernetes-demo-api:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
           env:
